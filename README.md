@@ -23,3 +23,5 @@ Discord : solo-thunder#0581
 メール : webmaster@solo-thunder.f5.si
 にDM・メールで送ってください。
 ※迷惑メールはご遠慮ください。※
+
+README.md Ver 0.0.X
