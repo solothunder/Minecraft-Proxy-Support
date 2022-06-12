@@ -1,7 +1,6 @@
 # Minecraft-Proxy-Support
 Minecraft-Proxy-Support Program
 
-このソフトのダウンロードをしていただきありがとうございます。
 こちらのソフトはVPSなどのコンソール環境でも使えるCUIの「Minecraft-Proxy-Support」です。
 構成としては
 Nginx 1.18.0でプロキシを立てています。
