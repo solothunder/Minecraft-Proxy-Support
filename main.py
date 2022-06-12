@@ -74,11 +74,11 @@ if __name__ == '__main__':
         res = subprocess.call("sudo apt install gcc", shell=True)
         res = subprocess.call("sudo apt install build-essential -y", shell=True)
         res = subprocess.call("wget https://nginx.org/download/nginx-1.18.0.tar.gz", shell=True)
-        res = subprocess.call("tar zxf nginx-1.18.0.tar.gz", shell=True)
-        res = subprocess.call("cd nginx-1.18.0", shell=True)
-        res = subprocess.call("./configure --with-stream --without-http_rewrite_module --without-http_gzip_module", shell=True)
-        res = subprocess.call("make", shell=True)
-        res = subprocess.call("sudo make install", shell=True)
+        res = subprocess.call("tar -zxvf nginx-1.18.0.tar.gz", shell=True)
+#        res = subprocess.call("cd nginx-1.18.0", shell=True)
+        res = subprocess.call("cd nginx-1.18.0/ && ./configure --with-stream --without-http_rewrite_module --without-http_gzip_module", shell=True)
+        res = subprocess.call("cd nginx-1.18.0/ && make", shell=True)
+        res = subprocess.call("cd nginx-1.18.0/ && sudo make install", shell=True)
 # Nginx設定ファイル変更
 # 聞く
         sshportnum = input("SSHのポートを入力してください。（例：22）")
